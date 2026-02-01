@@ -5,3 +5,5 @@ langchain-openai
 openai-whisper
 pydantic
 python-multipart
+langchain-google-genai
+google-generativeai

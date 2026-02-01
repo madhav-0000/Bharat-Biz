@@ -1,11 +1,11 @@
+from dotenv import load_dotenv
+load_dotenv()
+
 import os
 from fastapi import FastAPI, File, UploadFile, HTTPException
 from pydantic import BaseModel
 import whisper
 from backend.agents.orchestrator import agent_executor
-from dotenv import load_dotenv
-
-load_dotenv()
 app = FastAPI(title="Bharat Biz Backend")
 
 # Load Whisper model (Base is fast and good for Hinglish)
